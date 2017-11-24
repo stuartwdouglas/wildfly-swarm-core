@@ -752,6 +752,12 @@
 
       <dependency>
         <groupId>org.wildfly.swarm</groupId>
+        <artifactId>microprofile-opentracing</artifactId>
+        <version>2018.3.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.wildfly.swarm</groupId>
         <artifactId>mod_cluster</artifactId>
         <version>2018.3.0-SNAPSHOT</version>
       </dependency>
@@ -1026,6 +1032,7 @@
     <module>fractions/microprofile/microprofile-jwt</module>
     <module>fractions/microprofile/microprofile-metrics</module>
     <module>fractions/microprofile/microprofile-fault-tolerance</module>
+    <module>fractions/microprofile/microprofile-opentracing</module>
     <module>fractions/microprofile/microprofile</module>
     <module>fractions/monitor</module>
     <module>fractions/topology</module>
@@ -1360,6 +1367,8 @@
         <module>testsuite/microprofile-tcks/metrics</module>
         <module>testsuite/microprofile-tcks/fault-tolerance</module>
         <module>testsuite/microprofile-tcks/restclient</module>
+        <module>testsuite/microprofile-tcks/opentracing</module>
+        <module>testsuite</module>
       </modules>
     </profile>
 
