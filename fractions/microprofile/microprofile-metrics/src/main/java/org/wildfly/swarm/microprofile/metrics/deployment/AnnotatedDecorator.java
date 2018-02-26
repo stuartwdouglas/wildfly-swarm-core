@@ -20,6 +20,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 /* package-private */ class AnnotatedDecorator implements Annotated {
@@ -51,6 +52,16 @@ import java.util.Set;
         } else {
             return decorated.getAnnotation(annotationType);
         }
+    }
+
+    public <T extends Annotation> Set<T> getAnnotations(Class<T> annotationType) {
+        Set<T> ret = new LinkedHashSet<>();
+        for (Annotation annotation : annotations) {
+            if (annotationType.isAssignableFrom(annotation.annotationType())) {
+                ret.add((T) annotation);
+            }
+        }
+        return ret;
     }
 
     @Override

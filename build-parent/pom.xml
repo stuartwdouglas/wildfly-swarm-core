@@ -22,7 +22,7 @@
   <description>Build Parent to bring in required dependencies</description>
 
   <properties>
-    <version.wildfly.swarm.fraction.plugin>83</version.wildfly.swarm.fraction.plugin>
+    <version.wildfly.swarm.fraction.plugin>84-SNAPSHOT</version.wildfly.swarm.fraction.plugin>
 
     <version.org.snakeyaml>1.17</version.org.snakeyaml>
 
@@ -37,11 +37,11 @@
     <version.orientdb.config-api>1.2.4</version.orientdb.config-api>
     <version.wildfly.nosql.feature-pack>1.0.0.Alpha6</version.wildfly.nosql.feature-pack>
 
-    <version.wildfly>11.0.0.Final</version.wildfly>
-    <version.org.wildfly.core>3.0.8.Final</version.org.wildfly.core>
+    <version.wildfly>12.0.0.Beta2-SNAPSHOT</version.wildfly>
+    <version.org.wildfly.core>4.0.0.Beta2</version.org.wildfly.core>
     <version.jboss-logmanager-ext>1.0.0.Alpha3</version.jboss-logmanager-ext>
     <!-- Weld SE version must be aligned with the version used in WildFly -->
-    <version.weld-se>2.4.3.Final</version.weld-se>
+    <version.weld-se>3.0.3.Final</version.weld-se>
 
     <version.org.objectweb.asm>6.0</version.org.objectweb.asm>
 
